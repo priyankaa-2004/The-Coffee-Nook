@@ -1,0 +1,461 @@
+/* Common styles for all screen sizes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Scroll bar*/
+::-webkit-scrollbar {
+    width: 10px; /* Adjust the width as needed */
+    background-color: #1C0A00; /* Background color of the track */
+  }
+  
+  /* Style the scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #CC9544; /* Color of the thumb */
+    border-radius: 5px; /* Rounded corners for the thumb */
+  }
+  
+  /* Style the scrollbar on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #603601; /* Color of the thumb on hover */
+  }
+  
+
+/* Navbar styles */
+.navbar {
+    background: #1C0A00 !important;
+}
+
+.nav-link {
+    color: #CC9544 !important;
+}
+
+.nav-link:hover {
+    color: #603601 !important;
+    transition: 0.2s ease-in;
+}
+
+/* Home section styles */
+#home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 88%;
+}
+
+#home .content {
+    padding-top: 200px;
+    margin-left: 100px;
+    color: white;
+}
+
+#home .content h3 {
+    font-size: 50px;
+    color: white;
+}
+
+#home .content p {
+    margin-top: 10px;
+}
+
+#btn {
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #CC9544;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#btn:hover {
+    background-color: #1C0A00;
+    color: white;
+}
+
+/* About section styles */
+#about {
+    width: 100%;
+    height: 100vh;
+}
+
+#about .container {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.heading {
+    text-align: center;
+    color: #1C0A00;
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#about .card {
+    border-radius: 20px;
+}
+
+#about .card img {
+    border-radius: 20px;
+}
+
+#about-btn {
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #1C0A00;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#about-btn:hover {
+    background: #CC9544;
+    color: white;
+}
+
+/* Category section styles */
+#category {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1C0A00;
+    padding: 50px;
+}
+
+#cat-heading {
+    color: #CC9544;
+}
+
+.product .container {
+    width: 100%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1 1 calc(33.33% - 20px);
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    background: #1C0A00 !important;
+    color: white;
+    align-self: normal;
+}
+
+.card img {
+    border-radius: 20px;
+}
+
+.card p,
+h4 {
+    text-align: center;
+}
+
+#cat-heading {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Product section styles */
+.product {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.card-product {
+    flex: 1 1 calc(33.33% - 20px);
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    background: white;
+    color: #1C0A00;
+    align-self: normal;
+}
+
+.card-product img {
+    border-radius: 20px;
+}
+
+.heading3 {
+    text-align: center;
+    color: #1C0A00;
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.product h3 {
+    text-align: center;
+}
+
+.product p {
+    text-align: center;
+}
+
+.checked {
+    color: gold;
+}
+
+/* Contact section styles */
+.contact-section {
+    background-color: #1C0A00;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Style the contact container (two-column layout) */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style the contact info column */
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    background-color: #1C0A00;
+    /*box-shadow: 0 0 10px;
+    border-radius: 5px;*/
+    margin-right: 20px;
+    text-align: left;
+}
+
+.contact-info h2 {
+    font-size: 45px;
+    color: white;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contact-info ul li i {
+    margin-right: 10px;
+    color: #CC9544;
+}
+
+/* Style the contact form column */
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: left;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.input-container textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #CC9544;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #603601;
+}
+
+
+/* Footer section styles */
+#footer {
+    width: 100%;
+    height: 35vh;
+    color: #603601;
+    background: white;
+}
+
+.footer-text {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#footer .socail-links i {
+    font-size: 17px;
+    margin-left: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    background: #1C0A00;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.credite {
+    color: #CC9544;
+    margin-top: 20px;
+}
+
+.credite a {
+    text-decoration: none;
+    color: #1C0A00;
+    font-weight: bold;
+}
+
+.copyright {
+    color: #CC9544;
+}
+
+.copyright span {
+    color: #1C0A00;
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 992px) {
+
+    /* Adjust styles for medium-sized screens (tablets) here */
+    #about .container {
+        padding-top: 30px;
+    }
+
+    #about {
+        height: 120vh;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    /* Adjust styles for tablets and smaller screens here */
+    #home .content {
+        padding-top: 100px;
+        margin-left: 20px;
+    }
+
+    #home .content h3 {
+        font-size: 40px;
+    }
+
+    .card,
+    .card-product {
+        flex: 1 1 calc(50% - 20px);
+        margin: 10px;
+    }
+
+    #category .container {
+        padding: 20px;
+    }
+
+    #about {
+        height: 150vh;
+    }
+
+    #about .container {
+        padding-top: 20px;
+    }
+
+    #about .heading {
+        font-size: 40px;
+    }
+
+    #category {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* Adjust styles for mobile phones here */
+    #home .content {
+        padding-top: 80px;
+        margin-left: 10px;
+    }
+
+    #home .content h3 {
+        font-size: 30px;
+    }
+
+    .card,
+    .card-product {
+        flex: 1 1 calc(100% - 20px);
+        margin: 10px;
+    }
+
+    #category .container {
+        padding: 10px;
+    }
+
+    #about {
+        height: 150vh;
+    }
+
+    #about .container {
+        padding-top: 20px;
+    }
+
+    #about .row{
+        text-align: center;
+    }
+
+    #about .heading {
+        font-size: 30px;
+    }
+
+    #category {
+        padding-top: 20px;
+    }
+}
